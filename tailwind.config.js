@@ -6,10 +6,17 @@ module.exports = {
   theme: {
     extend: {
       fontFamily : {
-        'sans': ['Open Sans', 'sans-serif'],
+        'sans': ['Montserrat', 'sans-serif'],
+      //   'sans': ['Open Sans', 'sans-serif'],
       }
     },
-   
+    listStyleType: {
+      none: 'none',
+      disc: 'disc',
+      decimal: 'decimal',
+      square: 'square',
+      roman: 'upper-roman',
+    }
   },
   plugins: [],
 }
