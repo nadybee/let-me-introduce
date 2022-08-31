@@ -17,7 +17,7 @@ export default function Main() {
         online business
       </span> */}
         </h1>
-        <p className="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
+        <p className="mt-3 max-w-md mx-auto text-lg text-gray-600 sm:text-xl md:mt-5 md:max-w-3xl">
           My name is Natalie Fairbourne and I live in Orem, Utah. I am a
           software developer in training at the University of Utah Full Stack
           Bootcamp. I am the co-founder and CPO of Yoodlize, a peer-to-peer

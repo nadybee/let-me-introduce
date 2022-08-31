@@ -7,6 +7,8 @@ import Contact from "./components/Contact";
 import Project from "./components/Project";
 import Resume from "./components/Resume";
 import ProjectsPage from "./components/ProjectsPage";
+import {send} from 'emailjs-com'
+
 
 function App() {
   return (
@@ -15,10 +17,10 @@ function App() {
     {/* <Project /> */}
     {/* <ProjectsPage /> */}
     {/* <Resume /> */}
-    <div> 
-    <Main />
+ 
+    {/* <Main /> */}
     <Contact />
-    </div>
+    
    <Footer />
    </div>
   
