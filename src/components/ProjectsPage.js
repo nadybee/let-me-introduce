@@ -1,8 +1,13 @@
 
 
 import projects from "../projects"
+import { useContext } from 'react';
+
+import PortfolioContext from "../context/PortfolioContext"
 
   export default function ProjectsPage() {
+    const {currentPage, setCurrentPage} =useContext(PortfolioContext)
+
     return (
       <div className="bg-white">
         <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
@@ -23,7 +28,7 @@ import projects from "../projects"
                 </div>
                 <div className="flex-1 p-4 space-y-2 flex flex-col">
                   <h3 className="text-base font-bold text-gray-900">
-                    <a href={project.href}>
+                    <a onClick={()=>{setCurrentPage(project.click)}}>
                       <span aria-hidden="true" className="absolute inset-0" />
                       {project.name}
                     </a>

@@ -1,29 +1,25 @@
 
-// import './App.css';
+import './App.css';
 import Header from "./components/Header";
 import Footer from "./components/Footer"
+// import About from "./components/About";
+// import Contact from "./components/Contact";
+// import Project from "./components/Project";
+// import Resume from "./components/Resume";
+// import ProjectsPage from "./components/ProjectsPage";
+// import {send} from 'emailjs-com'
 import Main from "./components/Main";
-import Contact from "./components/Contact";
-import Project from "./components/Project";
-import Resume from "./components/Resume";
-import ProjectsPage from "./components/ProjectsPage";
-import {send} from 'emailjs-com'
-
+import { PortfolioProvider } from './context/PortfolioContext';
 
 function App() {
   return (
-    <div className="font-sans flex flex-col h-screen justify-between"> 
+    <PortfolioProvider> 
+    <div className="font-sans flex flex-col h-screen"> 
     <Header />
-    {/* <Project /> */}
-    {/* <ProjectsPage /> */}
-    {/* <Resume /> */}
- 
-    {/* <Main /> */}
-    <Contact />
-    
+   <Main />
    <Footer />
    </div>
-  
+   </PortfolioProvider>
   );
  
 }
