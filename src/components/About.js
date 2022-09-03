@@ -12,8 +12,8 @@ export default function About() {
         <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
           <img
             className="absolute inset-0 w-full h-full object-cover object-right"
-            src="/images/IMG_1153.jpg"
-            alt=""
+            src="./images/IMG_1153.png"
+            alt="middle aged woman sitting at her desk"
           />
         </div>
         <h1 className="text-2xl mt-2 tracking-tight font-bold text-gray-700  md:text-5xl">
@@ -37,20 +37,20 @@ export default function About() {
         </p>
         <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
           <div className="rounded-md shadow">
-            <a
+            <button
                  onClick = {()=>{  setCurrentPage('projects')}}
               className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700 md:py-4 md:text-lg md:px-10"
             >
               See Projects
-            </a>
+            </button>
           </div>
           <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-            <a
+            <button
              onClick={()=>{setCurrentPage('contact')}}
               className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-red-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
             >
               Contact Me
-            </a>
+            </button>
           </div>
         </div>
       </div>
