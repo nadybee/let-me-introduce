@@ -1,8 +1,8 @@
-/* This example requires Tailwind CSS v2.0+ */
+
 const navigation = [
     {
       name: 'Linkedin',
-      href: '#',
+      href: 'https://www.linkedin.com/in/natalie-fairbourne-51986685/',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -14,7 +14,7 @@ const navigation = [
     },
     {
       name: 'Instagram',
-      href: '#',
+      href: 'https://www.instagram.com/nataliefairbourne/',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -28,7 +28,7 @@ const navigation = [
    
     {
       name: 'GitHub',
-      href: '#',
+      href: 'https://github.com/nadybee',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -44,11 +44,13 @@ const navigation = [
   
   export default function Footer() {
     return (
-      <footer className="bg-white  mt-20 bottom-0 z-30">
+      <footer className="bg-white fixed
+      inset-x-0
+      bottom-0 z-30">
         <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
           <div className="flex justify-center space-x-6 md:order-2">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
+              <a key={item.name} href={item.href} target="_blank" className="text-gray-400 hover:text-gray-500">
                 <span className="sr-only">{item.name}</span>
                 <item.icon className="h-6 w-6" aria-hidden="true" />
               </a>

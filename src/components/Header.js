@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react"
+import { useContext } from "react"
 import PortfolioContext, {
   PortfolioProvider,
 } from "../context/PortfolioContext"
@@ -9,19 +9,11 @@ import {
   Squares2X2Icon,
   Bars3Icon,
   XMarkIcon,
-  NewspaperIcon,
-  HeartIcon,
-  SunIcon,
-  LightBulbIcon,
-  CakeIcon,
-  DevicePhoneMobileIcon,
+
 } from "@heroicons/react/24/outline"
 import { ChevronDownIcon } from "@heroicons/react/20/solid"
 
 import projects from "../projects"
-
-
-
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ")
@@ -131,7 +123,7 @@ export default function Header() {
               </Popover>
 
               <a
-               onClick ={()=>{setCurrentPage('current-project')}}
+               onClick ={()=>{setCurrentPage('yoodlize')}}
                 className="text-base font-medium text-gray-500 hover:text-gray-900"
               >
                 Current Project

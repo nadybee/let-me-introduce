@@ -5,6 +5,7 @@ import Contact from "./Contact";
 import Project from "./Project";
 import Resume from "./Resume";
 import ProjectsPage from "./ProjectsPage";
+import Modal from "./modal";
 // import {send} from 'emailjs-com'
 // import {useState} from 'react'
 import { useContext, useEffect } from 'react';
@@ -26,6 +27,11 @@ export default function Main(){
             else if (currentPage === 'contact'){
                 return (
                     <Contact />
+                )
+            }
+            else if (currentPage === 'modal'){
+                return (
+                    <Modal />
                 )
             }
             else if(currentPage === 'resume'){

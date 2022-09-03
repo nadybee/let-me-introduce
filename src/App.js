@@ -17,7 +17,7 @@ function App() {
     <div className="font-sans flex flex-col h-screen"> 
     <Header />
    <Main />
-   <Footer />
+   <Footer /> 
    </div>
    </PortfolioProvider>
   );
