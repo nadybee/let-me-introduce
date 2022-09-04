@@ -31,26 +31,16 @@ export default function About() {
         </p>
         <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
           <div className="rounded-md shadow">
-<<<<<<< HEAD
             <button
                  onClick = {()=>{  setCurrentPage('projects')}}
-=======
-            <a
-              href="#"
->>>>>>> parent of d6692771 (clean up and readme)
               className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700 md:py-4 md:text-lg md:px-10"
             >
               See Projects
             </button>
           </div>
           <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-<<<<<<< HEAD
             <button
              onClick={()=>{setCurrentPage('contact')}}
-=======
-            <a
-              href="#"
->>>>>>> parent of d6692771 (clean up and readme)
               className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-red-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
             >
               Contact Me

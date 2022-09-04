@@ -1,14 +1,7 @@
-<<<<<<< HEAD
 
 
 import { useContext} from "react"
 import PortfolioContext from "../context/PortfolioContext"
-=======
-import { useContext, useEffect } from "react"
-import PortfolioContext, {
-  PortfolioProvider,
-} from "../context/PortfolioContext"
->>>>>>> parent of d6692771 (clean up and readme)
 
 import { Fragment } from "react"
 import { Popover, Transition } from "@headlessui/react"
@@ -137,11 +130,7 @@ export default function Header() {
                 )}
               </Popover>
 
-<<<<<<< HEAD
               <button
-=======
-              <a
->>>>>>> parent of d6692771 (clean up and readme)
                onClick ={()=>{setCurrentPage('current-project')}}
                 className="text-base font-medium text-gray-500 hover:text-gray-900"
               >
