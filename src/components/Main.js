@@ -6,9 +6,8 @@ import Project from "./Project";
 import Resume from "./Resume";
 import ProjectsPage from "./ProjectsPage";
 import Modal from "./modal";
-// import {send} from 'emailjs-com'
-// import {useState} from 'react'
-import { useContext, useEffect } from 'react';
+
+import { useContext} from 'react';
 
 import PortfolioContext from "../context/PortfolioContext"
 
@@ -16,9 +15,7 @@ export default function Main(){
     const {currentPage} =useContext(PortfolioContext)
    return (
     <> 
-    {/* {contact ? <Contact />: <About />} */}
-    {/* {resume ? <Resume /> : <About />} */}
-   {/* <ProjectsPage /> */}
+  
     {
         (()=>{
             if (currentPage === 'about'){

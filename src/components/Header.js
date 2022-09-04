@@ -1,7 +1,7 @@
-import { useContext } from "react"
-import PortfolioContext, {
-  PortfolioProvider,
-} from "../context/PortfolioContext"
+
+
+import { useContext} from "react"
+import PortfolioContext from "../context/PortfolioContext"
 
 import { Fragment } from "react"
 import { Popover, Transition } from "@headlessui/react"
@@ -14,6 +14,9 @@ import {
 import { ChevronDownIcon } from "@heroicons/react/20/solid"
 
 import projects from "../projects"
+
+
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ")
@@ -32,12 +35,12 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
             <div className="flex justify-start lg:w-0 lg:flex-1">
-            <a onClick={()=>{setCurrentPage('about')}}> 
+            <button onClick={()=>{setCurrentPage('about')}}> 
               <h1 className="text-xl md:text-3xl text-red-700">
                 {" "}
                 Natalie Fairbourne Portfolio
               </h1>
-              </a>
+              </button>
             </div>
             <div className="-mr-2 -my-2 md:hidden">
               <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500">
@@ -78,7 +81,7 @@ export default function Header() {
                         <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                           <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                           {projects.map((item) => (
-                              <a
+                              <button
                                 key={item.name}
                                 onClick={()=>{setCurrentPage(item.click)}}
                                 className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
@@ -95,14 +98,14 @@ export default function Header() {
                                     {item.description}
                                   </p>
                                 </div>
-                              </a>
+                              </button>
                             ))}
                            
                           </div>
                           <div className="px-5 py-5 bg-gray-50 space-y-6 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
                             
                               <div  className="flow-root">
-                                <a
+                                <button
                                   onClick = {()=>{  setCurrentPage('projects')}}
                                   className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100"
                                 >
@@ -111,7 +114,7 @@ export default function Header() {
                                     aria-hidden="true"
                                   />
                                   <span className="ml-3">See All Projects</span>
-                                </a>
+                                </button>
                               </div>
                             
                           </div>
@@ -122,19 +125,19 @@ export default function Header() {
                 )}
               </Popover>
 
-              <a
-               onClick ={()=>{setCurrentPage('yoodlize')}}
+              <button
+               onClick ={()=>{setCurrentPage('current-project')}}
                 className="text-base font-medium text-gray-500 hover:text-gray-900"
               >
                 Current Project
-              </a>
-              <a
+              </button>
+              <button
                 onClick ={()=>{setCurrentPage('resume')}}
                 className="text-base font-medium text-gray-500 hover:text-gray-900"
               >
                 Resume
-              </a>
-              <a
+              </button>
+              <button
                 onClick={() => { setCurrentPage('contact')
                 
 
@@ -143,7 +146,7 @@ export default function Header() {
                 className="text-base font-medium text-gray-500 hover:text-gray-900"
               >
                 Contact Me
-              </a>
+              </button>
             </Popover.Group>
           </div>
         </div>
@@ -177,7 +180,7 @@ export default function Header() {
                 <div className="mt-6">
                   <nav className="grid gap-y-8">
                   {projects.map((item) => (
-                      <a
+                      <button
                         key={item.name}
                         onClick={()=>{setCurrentPage(item.click)}}
                         className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
@@ -189,7 +192,7 @@ export default function Header() {
                         <span className="ml-3 text-base font-medium text-gray-900">
                           {item.name}
                         </span>
-                      </a>
+                      </button>
                     ))}
                       
                       
@@ -199,30 +202,30 @@ export default function Header() {
               </div>
               <div className="py-6 px-5 space-y-6">
                 <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                  <a
+                  <button
                    onClick={() => {
                       setCurrentPage('project')
                     }}
                     className="text-base font-medium text-gray-900 hover:text-gray-700"
                   >
                     Current Project
-                  </a>
-                  <a
+                  </button>
+                  <button
                     onClick={() => {
                       setCurrentPage('resume')
                     }}
                     className="text-base font-medium pointer-events-auto text-gray-900 hover:text-gray-700"
                   >
                     Resume
-                  </a>
-                  <a
+                  </button>
+                  <button
                     onClick={() => {
                       setCurrentPage('contact')
                     }}
                     className="text-base font-medium text-gray-900 hover:text-gray-700"
                   >
                     Contact Me
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>

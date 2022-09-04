@@ -6,7 +6,7 @@ import { useContext } from 'react';
 import PortfolioContext from "../context/PortfolioContext"
 
   export default function ProjectsPage() {
-    const {currentPage, setCurrentPage} =useContext(PortfolioContext)
+    const {setCurrentPage} =useContext(PortfolioContext)
 
     return (
       <div className="bg-white">
@@ -28,10 +28,10 @@ import PortfolioContext from "../context/PortfolioContext"
                 </div>
                 <div className="flex-1 p-4 space-y-2 flex flex-col">
                   <h3 className="text-base font-bold text-gray-900">
-                    <a onClick={()=>{setCurrentPage(project.click)}}>
+                    <button onClick={()=>{setCurrentPage(project.click)}}>
                       <span aria-hidden="true" className="absolute inset-0" />
                       {project.name}
-                    </a>
+                    </button>
                   </h3>
                   <p className="text-sm text-gray-500">{project.description}</p>
                   <div className="flex-1 flex flex-col justify-end">

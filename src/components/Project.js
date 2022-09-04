@@ -96,6 +96,7 @@ export default function Project() {
                 className="w-full bg-red-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-red-500"
                 href ={project.href}
                 target= "_blank"
+                rel="noreferrer"
               >
                 Deployed App
               </a>
@@ -104,6 +105,7 @@ export default function Project() {
                 className="w-full bg-red-50 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-red-700 hover:bg-red-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-red-500"
                 href= {project.github}
                 target= "_blank"
+                rel="noreferrer"
               >
                 GitHub
               </a>

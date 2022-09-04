@@ -3,9 +3,7 @@ import { Fragment, useState } from "react"
 import { Dialog, Transition } from "@headlessui/react"
 import { CheckIcon } from "@heroicons/react/24/outline"
 import { useContext } from "react"
-import PortfolioContext, {
-  PortfolioProvider,
-} from "../context/PortfolioContext"
+import PortfolioContext from "../context/PortfolioContext"
 
 export default function Modal() {
   const [open, setOpen] = useState(true)
