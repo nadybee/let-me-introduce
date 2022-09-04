@@ -5,15 +5,9 @@ import Contact from "./Contact";
 import Project from "./Project";
 import Resume from "./Resume";
 import ProjectsPage from "./ProjectsPage";
-<<<<<<< HEAD
-import Modal from "./modal";
+
 
 import { useContext} from 'react';
-=======
-// import {send} from 'emailjs-com'
-// import {useState} from 'react'
-import { useContext, useEffect } from 'react';
->>>>>>> parent of d6692771 (clean up and readme)
 
 import PortfolioContext from "../context/PortfolioContext"
 

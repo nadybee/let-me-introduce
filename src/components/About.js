@@ -1,4 +1,10 @@
+import { useContext} from "react"
+import PortfolioContext from "../context/PortfolioContext"
 export default function About() {
+  const {
+    setCurrentPage
+    
+   } = useContext(PortfolioContext)
     return (
 <main className="lg:relative">
     <div className="mx-auto max-w-7xl w-full pt-8 pb-20 text-center lg:py-48 lg:text-left">

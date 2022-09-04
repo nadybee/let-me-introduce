@@ -1,23 +1,20 @@
 /* This example requires Tailwind CSS v2.0+ */
-<<<<<<< HEAD
 import { Fragment, useState } from "react"
 import { Dialog, Transition } from "@headlessui/react"
 import { CheckIcon } from "@heroicons/react/24/outline"
 import { useContext } from "react"
 import PortfolioContext from "../context/PortfolioContext"
-=======
-import { Fragment, useState } from 'react'
-import { Dialog, Transition } from '@headlessui/react'
-import { CheckIcon } from '@heroicons/react/24/outline'
-import Main from './About'
->>>>>>> parent of d6692771 (clean up and readme)
+
 
 export default function Modal() {
   const [open, setOpen] = useState(true)
+  const {
+    setCurrentPage
+    
+   } = useContext(PortfolioContext)
 
 
-  return !open ? ( <Main />) :
-   (
+  return (
     <Transition.Root show={open} as={Fragment}>
       <Dialog as="div" className="relative z-10" onClose={setOpen}>
         <Transition.Child
@@ -63,7 +60,7 @@ export default function Modal() {
                   <button
                     type="button"
                     className="inline-flex w-full justify-center rounded-md border border-transparent bg-red-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 sm:text-sm"
-                    onClick={() => setOpen(false)}
+                    onClick={() => setCurrentPage('about')}
                   >
                     Close
                   </button>
