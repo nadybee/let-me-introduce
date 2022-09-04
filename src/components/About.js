@@ -1,4 +1,4 @@
-import { useContext } from "react"
+import { useContext} from "react"
 import PortfolioContext from "../context/PortfolioContext"
 export default function About() {
   const {
@@ -7,7 +7,7 @@ export default function About() {
    } = useContext(PortfolioContext)
     return (
 <main className="lg:relative">
-    <div className="mx-auto max-w-7xl w-full pt-8 pb-20 lg:py-48 lg:text-left">
+    <div className="mx-auto max-w-7xl w-full pt-8 pb-20 text-center lg:py-48 lg:text-left">
       <div className="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
         <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
           <img
@@ -23,7 +23,7 @@ export default function About() {
         online business
       </span> */}
         </h1>
-        <p className="mt-3 max-w-md mx-auto text-gray-600 text-base md:text-xl md:mt-5 md:max-w-3xl">
+        <p className="mt-3 max-w-md mx-auto text-lg text-gray-600 sm:text-xl md:mt-5 md:max-w-3xl">
           My name is Natalie Fairbourne and I live in Orem, Utah. I am a
           software developer in training at the University of Utah Full Stack
           Bootcamp. I am the co-founder and CPO of Yoodlize, a peer-to-peer
@@ -37,20 +37,20 @@ export default function About() {
         </p>
         <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
           <div className="rounded-md shadow">
-            <a
+            <button
                  onClick = {()=>{  setCurrentPage('projects')}}
               className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700 md:py-4 md:text-lg md:px-10"
             >
               See Projects
-            </a>
+            </button>
           </div>
           <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-            <a
+            <button
              onClick={()=>{setCurrentPage('contact')}}
               className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-red-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
             >
               Contact Me
-            </a>
+            </button>
           </div>
         </div>
       </div>
