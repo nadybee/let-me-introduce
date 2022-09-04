@@ -131,7 +131,7 @@ export default function Header() {
               </Popover>
 
               <button
-               onClick ={()=>{setCurrentPage('current-project')}}
+               onClick ={()=>{setCurrentPage('yoodlize')}}
                 className="text-base font-medium text-gray-500 hover:text-gray-900"
               >
                 Current Project
