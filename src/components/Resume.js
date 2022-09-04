@@ -46,9 +46,8 @@ export default function Resume() {
                 </div>
                 <a
               href = "./fairbourne_resume.pdf"
-              target= "_blank"
-             
-                className="w-full mt-2 bg-white border border-red-700 rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-red-700 hover:bg-red-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-red-500"
+              target="_blank"
+                className="w-full mt-2 bg-red-50 border border-red-700 rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-red-700 hover:bg-red-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-red-500"
               >
                Download my Resume
               </a>
