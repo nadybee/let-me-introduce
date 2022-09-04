@@ -9,12 +9,7 @@ import {
   Squares2X2Icon,
   Bars3Icon,
   XMarkIcon,
-  NewspaperIcon,
-  HeartIcon,
-  SunIcon,
-  LightBulbIcon,
-  CakeIcon,
-  DevicePhoneMobileIcon,
+
 } from "@heroicons/react/24/outline"
 import { ChevronDownIcon } from "@heroicons/react/20/solid"
 
@@ -86,7 +81,7 @@ export default function Header() {
                         <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                           <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                           {projects.map((item) => (
-                              <button
+                              <a
                                 key={item.name}
                                 onClick={()=>{setCurrentPage(item.click)}}
                                 className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
@@ -103,7 +98,7 @@ export default function Header() {
                                     {item.description}
                                   </p>
                                 </div>
-                              </button>
+                              </a>
                             ))}
                            
                           </div>
@@ -209,7 +204,7 @@ export default function Header() {
                 <div className="grid grid-cols-2 gap-y-4 gap-x-8">
                   <button
                    onClick={() => {
-                      setCurrentPage('project')
+                      setCurrentPage('yoodlize')
                     }}
                     className="text-base font-medium text-gray-900 hover:text-gray-700"
                   >
